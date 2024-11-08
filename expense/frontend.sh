@@ -1,5 +1,5 @@
 dnf install nginx -y  
-cp proxy.conf /etc/nginx/default.d/expense.conf
+#cp proxy.conf /etc/nginx/default.d/expense.conf
 systemctl enable nginx 
 systemctl start nginx 
 rm -rf /usr/share/nginx/html/*  
