@@ -13,7 +13,7 @@ cp backend.service  /etc/systemd/system/backend.service
 chmod -R 775 /app
 chown -R expense:expense /app
 dnf install mysql-server -y
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pExpenseApp@1 < /app/schema/backend.sql 
+mysql -h localhost -uroot -pExpenseApp@1 < /app/schema/backend.sql 
 systemctl daemon-reload
 systemctl enable backend 
 systemctl start backend
